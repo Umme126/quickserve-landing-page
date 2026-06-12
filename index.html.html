@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy JS Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quiz-container">
+    <div id="quiz-screen">
+        <div class="header">
+            <span id="progress-text">Question 1 of 10</span>
+            <div class="timer-badge">
+                <span>⏱️</span><span id="time-clock">30</span>s
+            </div>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <h2 id="question-text">Loading question...</h2>
+        <div class="options-container" id="options-container"></div>
+        <button id="next-btn" class="btn">Next Question →</button>
+    </div>
+
+    <div id="results-screen" class="hidden results-card">
+        <h2>Quiz Completed! 🎉</h2>
+        <div class="score-big" id="score-text">0/0</div>
+        <div><span class="percentage-badge" id="percentage-text">0%</span></div>
+        <p id="feedback-msg"></p>
+        <button id="restart-btn" class="btn" style="display: block;">Try Again 🔄</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
